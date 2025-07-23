@@ -1,0 +1,41 @@
+:root {
+  --Green: #44FFA1;
+  --Purple-900: #24053E;
+  --Purple-500: #584D62;
+  --Purple-100: #FCF8FF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  color: var(--Purple-900);
+  background-color: var(--Green);
+  padding: 0.75rem 2rem;
+}
+
+main {
+  position: relative;
+}
+
+header {
+  background-color: var(--Purple-900);
+}
+
+main::after {
+  content: '';
+  border-bottom-left-radius: 50% 100%;
+  border-bottom-right-radius: 50% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  background-color: var(--Purple-900);
+  height: 70%;
+}
