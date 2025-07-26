@@ -124,6 +124,42 @@ main {
   padding-top: 10rem;
 }
 
+section:nth-child(1) {
+  background-color: var(--Purple-100);
+  color: var(--Purple-500);
+}
+
+.features span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: min-content;
+  font-family: "Fraunces";
+  font-size: 1.25rem;
+  line-height: 40%;
+  letter-spacing: 0px;
+  padding: 0.25rem 1.25rem;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid var(--Purple-500);
+  border-radius: 50%;
+}
+
+.features h3 {
+  font-family: "Fraunces";
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0px;
+}
+
+.feature-item p {
+  font-family: "Manrope";
+  font-size: 1rem;
+  line-height: 180%;
+  letter-spacing: 0px;
+}
+
 section:nth-child(2) {
   padding-inline: 20px;
   background-color: white;
@@ -158,6 +194,10 @@ section:nth-child(2) img {
 
 .founder p {
   padding-bottom: 32px;
+}
+
+.pattern-3 {
+  display: none;
 }
 
 
@@ -198,5 +238,25 @@ footer img:first-child {
   .founder {
     margin-top: 168px;
     margin-left: -110px;
+    position: relative;
+    text-align: left;
+    padding: 48px;
+  }
+
+  .founder h3 {
+    font-size: 3.5rem;
+  }
+
+  .founder .button {
+    margin-left: auto;
+    margin-inline: 0;
+  }
+
+  .pattern-3 {
+    display: block;
+    position: absolute;
+    max-width: 175px !important;
+    bottom: -25%;
+    right: 5%;
   }
 }
